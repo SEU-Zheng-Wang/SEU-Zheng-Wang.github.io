@@ -5,11 +5,18 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="keywords" content="Zheng Wang, 王正, Remote Sensing, Image Processing, Deep Learning, Denoising, Cloud Removal, Hyperspecral">
- <style> .collapsible {cursor: pointer;padding: 10px;background-color: #f1f1f1; }.content {display: none; padding: 10px;} </style>
-  <style> .collapsible2 {cursor: pointer;padding: 10px;background-color: #f1f1f1; }.content {display: none; padding: 10px;} </style>
-  <style> .collapsible3 {cursor: pointer;padding: 10px;background-color: #f1f1f1; }.content {display: none; padding: 10px;} </style>
-  <style> .collapsible4 {cursor: pointer;padding: 10px;background-color: #f1f1f1; }.content {display: none; padding: 10px;} </style>
-<style> .content, .content2, .content3, .content4 { display: none; /* 初始状态为隐藏 */} </style>
+<style>
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+}
+</style>
  <style>.blue-underline { color: blue; /* 设置字体颜色为蓝色 */text-decoration: underline; /* 添加下划线效果 */ }</style>
  <style>.underline {text-decoration: underline; /* 添加下划线效果 */ }</style>
  <style> .blue-text {color: blue; /* 设置文本颜色为蓝色 */ }</style>
@@ -18,6 +25,19 @@
     </style>
 <link rel="stylesheet" href="./Files/jemdoc.css" type="text/css" />
 <script src="jquery.min.js"></script>
+ <script>
+function toggleContent(elementClass) {
+    var content = document.querySelector('.' + elementClass);
+    if (content.style.display === 'block') {
+        content.style.display = 'none';
+    } else {
+        content.style.display = 'block';
+    }
+}
+toggleContent('content2');
+toggleContent('content3');
+toggleContent('content4');
+  </script>
 <link rel="shortcut icon" href="./Files/SEU.ico">
 <title>Zheng Wang</title>
 </head>
@@ -204,75 +224,34 @@ With respect to the Pysical Layer of Wireless Communications, his current resear
 <br />
  
 <p><b>Research Background</b>: </p>
- 
-<div class="collapsible2" onclick="toggleContent2()">
+<div class="collapsible" onclick="toggleContent('content2')">
     <img src="./Files/button.png" alt="button" width="35px" height="20px" />
     Click the fold button to view the images (<span class="blue-text">点击查看图片</span>)
 </div>
 
-<div class="content2">
+<div class="content content2">
     <img src="./Files/Research_update1.jpg" alt="Research_update1"  width="900px" height="550px"  />
 </div>
 
-<script>
-    function toggleContent2() {
-        var content2 = document.querySelector('.content2');
-        if (content2.style.display === 'block') {
-            content2.style.display = 'none';
-        } else {
-            content2.style.display = 'block';
-        }
-    }
-    // 初始状态为关闭
-    toggleContent2();
-</script>
-
 <p><b>Research Framework</b>: </p>
- <div class="collapsible3" onclick="toggleContent3()">
-       <img src="./Files/button.png" alt="button" width="35px" height="20px" />
-   Click the fold button to view the images (<span class="blue-text">点击查看图片</span>)
+<div class="collapsible" onclick="toggleContent('content3')">
+    <img src="./Files/button.png" alt="button" width="35px" height="20px" />
+    Click the fold button to view the images (<span class="blue-text">点击查看图片</span>)
 </div>
 
-<div class="content3">
- <img src="./Files/Research_update2.jpg" alt="Research_update2"  width="900px" height="550px"  />
+<div class="content content3">
+    <img src="./Files/Research_update2.jpg" alt="Research_update2"  width="900px" height="550px"  />
 </div>
 
-<script>
-    function toggleContent3() {
-        var content3 = document.querySelector('.content3');
-        if (content3.style.display === 'block') {
-            content3.style.display = 'none';
-        } else {
-            content3.style.display = 'block';
-        }
-    }
-
-     // 初始状态为关闭
-    toggleContent3();
-</script>
- 
 <p><b>Research Methodology</b>: </p>
-<div class="collapsible4" onclick="toggleContent4()">
-       <img src="./Files/button.png" alt="button" width="35px" height="20px" />
-   Click the fold button to view the images (<span class="blue-text">点击查看图片</span>)
+<div class="collapsible" onclick="toggleContent('content4')">
+    <img src="./Files/button.png" alt="button" width="35px" height="20px" />
+    Click the fold button to view the images (<span class="blue-text">点击查看图片</span>)
 </div>
 
-<div class="content4">
- <img src="./Files/Research_update3.jpg" alt="Research_update3"  width="900px" height="550px"  />
+<div class="content content4">
+    <img src="./Files/Research_update3.jpg" alt="Research_update3"  width="900px" height="550px"  />
 </div>
-
-<script>
-    function toggleContent4() {
-        var content4 = document.querySelector('.content4');
-        if (content4.style.display === 'block') {
-            content4.style.display = 'none';
-        } else {
-            content4.style.display = 'block';
-        }
-    }
-     // 初始状态为关闭
-    toggleContent4();
-</script>
  
  <br />
 I’m always looking for outstanding and self-motivated PhD students. Please feel free to contact me if you have any queries. I apologize that I am unable to reply to everyone due to the large number of emails. I will contact you if further information is needed. <br />
