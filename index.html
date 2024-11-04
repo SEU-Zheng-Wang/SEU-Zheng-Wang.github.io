@@ -5,6 +5,36 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="keywords" content="Zheng Wang, 王正, Remote Sensing, Image Processing, Deep Learning, Denoising, Cloud Removal, Hyperspecral">
+    <style>
+        .collapsible-new {
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .triangle-new {
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #333;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        .triangle-new.expanded {
+            transform: rotate(180deg);
+        }
+        .content-new {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 <style>
 .collapsible {
     cursor: pointer;
@@ -35,6 +65,20 @@ function toggleContent(elementClass) {
     }
 }
   </script>
+    <script>
+    function toggleContentNew() {
+        var contentNew = document.getElementById("collapsibleContentNew");
+        var triangleNew = document.getElementById("triangleIconNew");
+
+        if (contentNew.style.display === "block") {
+            contentNew.style.display = "none";
+            triangleNew.classList.remove("expanded");
+        } else {
+            contentNew.style.display = "block";
+            triangleNew.classList.add("expanded");
+        }
+    }
+</script>
 <link rel="shortcut icon" href="./Files/SEU.ico">
 <title>Zheng Wang (Southeast University) Homepage</title>
 </head>
@@ -226,6 +270,14 @@ Personal website of Southeast University: <a href="https://radio.seu.edu.cn/_s29
  <img src="./Files/大师姐2.jpg" alt="大师姐2"  width="600px" height="300px"  />
 </div>
 
+        <div class="collapsible-new" onclick="toggleContentNew()">
+    <div class="triangle-new" id="triangleIconNew"></div>
+   View More Earlier News
+</div>
+
+<!-- 新的折叠内容 -->
+<div class="content-new" id="collapsibleContentNew">
+    <p>
 
  <li> <b> <font color="#FF0000">[2024.04]</font> </b> Paper of Lanxin He was accepted by IEEE TVT (贺岚昕同学(研三，2021级)论文被IEEE TVT期刊录用)
         (<a href= "https://ieeexplore.ieee.org/document/10526460" target="_blank">link</a>)   
@@ -347,6 +399,9 @@ Personal website of Southeast University: <a href="https://radio.seu.edu.cn/_s29
    [<a href= "./Files/Compressed_Wideband_Spectrum_Mapping_in_3D_Spectrum-Heterogeneous_Environment.pdf"_blank">PDF</a>] </li>
 
     <li> <b> <font color="#FF0000">[2023.01]</font> </b>  Dr. Zheng Wang was awarded as Outstanding Undergraduate Tutor of Southeast University for the 2021-2022 Academic Year(王正老师荣膺东南大学2021-2022学年优秀本科生导师荣誉称号)</li>
+</p>
+</div>
+        
 </ul>
 </font>
 <br />
