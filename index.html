@@ -878,12 +878,53 @@ I’m always looking for outstanding and self-motivated PhD students. Please fee
 </ul>
 </font>
 <br />
+
+<style>
+/*==== 计数器核心代码 ====*/
+.ref-chapter { 
+  counter-reset: ref-counter;   /* 每遇到新的章节归零 */
+}
+p.ref {
+  counter-increment: ref-counter;
+  text-indent: -2rem;
+  margin-left: 2rem;
+}
+p.ref::before {
+  content: "[" counter(ref-counter) "] ";
+  font-weight: bold;
+  margin-right: .25rem;
+}
+</style>
     
 <A NAME="Representative Publications"><h2><a href="./"><img src="./Files/3.png" alt="papers"  width="35px" height="30px"  /> Representative Publications</h2></A>
 <p><b>Journal Articles</b>: </p>
 <font size="3"> 
 <ul>
 
+<section class="ref-chapter">
+<p class="ref">
+<b>Z. Wang*</b> and C. Ling, “Lattice Gaussian sampling by Markov chain Monte Carlo: Bounded
+distance decoding and trapdoor sampling, ”
+<i><b><span class="underline">IEEE Transactions on </span>
+ <span class="blue-underline">Information Theory </span></b>
+(<b>TIT</b>, </i>信息论权威期刊), 
+ vol. 65, no.6, pp. 3630-3645, June, 2019.
+[<a href= "https://ieeexplore.ieee.org/document/8653323" target="_blank">Link</a>] 
+[<a href= "./Files/Lattice_Gaussian_Sampling_by_Markov_Chain_Monte_Carlo_Bounded_Distance_Decoding_and_Trapdoor_Sampling.pdf" target="_blank">PDF</a>]  
+</p>
+
+<p class="ref">
+<b>Z. Wang*</b> and C. Ling, “On the geometric ergodicity of Metropolis-Hastings algorithms for
+lattice Gaussian sampling,” 
+<i><b><span class="underline">IEEE Transactions on </span>
+ <span class="blue-underline">Information Theory </span></b>
+(<b>TIT</b>, </i>信息论权威期刊), 
+ vol. 64, no. 2, pp. 738-751, Feb, 2018.
+[<a href= "https://ieeexplore.ieee.org/document/8013823" target="_blank">Link</a>] 
+[<a href= "./Files/On_the_Geometric_Ergodicity_of_Metropolis-Hastings_Algorithms_for_Lattice_Gaussian_Sampling.pdf"_blank">PDF</a>]  
+</p>
+</section>
+    
 <p style="text-indent: -2rem;margin-left: 0rem;">
 <span>[1] <b>Z. Wang*</b> and C. Ling, “Lattice Gaussian sampling by Markov chain Monte Carlo: Bounded
 distance decoding and trapdoor sampling, ”
@@ -1425,7 +1466,23 @@ Florence, Italy, 2023, pp. 1-5.
 <A NAME="Articles of Supervised Students and Cooperation"><h2><a href="./"><img src="./Files/3.png" alt="projects"  width="30px" height="30px"  /> Articles of Supervised Students and Cooperation</h2></A>
 <font size="3"> 
 <ul>
+    
+<section class="ref-chapter">
 
+<p class="ref">
+ Q. Chen, <b>Z. Wang*</b>, C. Qi, Z. Gao, Y. Huang and D. Niyato, "Decentralized Likelihood Ascent Search-Aided Detection For Distributed Large-Scale MIMO Systems, ”
+<i><b><span class="underline">IEEE Transactions on Wireless Communications, </span></b> </i>
+vol. 24, no. 5, pp. 4160-4173, May 2025.
+[<a href= "https://ieeexplore.ieee.org/document/10897128" target="_blank">Link</a>] 
+</p> 
+
+<p class="ref">
+L. He, <b>Z. Wang*</b>, S. Yang, T. Liu and Y. Huang, “Generalizing Projected Gradient Descent for Deep-Learning-Aided Massive MIMO Detection, ”
+<i><b><span class="underline">IEEE Transactions on Wireless Communications, </span></b> </i>
+vol. 23, no. 3, pp. 1827-1839, March 2024.
+[<a href= "https://ieeexplore.ieee.org/document/10181137" target="_blank">Link</a>] 
+</p> 
+</section>
 
   <p style="text-indent: -2rem;margin-left: 0rem;">
 <span>[1] Q. Chen, <b>Z. Wang*</b>, C. Qi, Z. Gao, Y. Huang and D. Niyato, "Decentralized Likelihood Ascent Search-Aided Detection For Distributed Large-Scale MIMO Systems, ”
