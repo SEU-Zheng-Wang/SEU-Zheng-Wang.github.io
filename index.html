@@ -1294,7 +1294,7 @@ p.ref::before {
                     </td>
     
                 </tr>
-            </table>
+            </table class="book-table">
 
             <font size="3">
                 <ul>
@@ -1313,6 +1313,14 @@ p.ref::before {
             <br />
 
             <style>
+                .book-table,
+                .book-table tr,
+                .book-table td,
+                .book-table img {
+                 border: none !important;
+                 outline: none;
+                 box-shadow: none;
+               }
                 .pcontainer {
                     display: flex;
                     align-items: center; /* Vertically center items */
